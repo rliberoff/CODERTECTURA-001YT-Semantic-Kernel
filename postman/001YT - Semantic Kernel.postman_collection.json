@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "37c11f93-14cf-444b-ae4d-881ac620657e",
+		"name": "001YT - Semantic Kernel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24498958"
+	},
+	"item": [
+		{
+			"name": "Summarize",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": \"ChatGPT es un prototipo de chatbot de inteligencia artificial desarrollado en 2022 por OpenAI que se especializa en el diálogo. El chatbot es un gran modelo de lenguaje, ajustado con técnicas de aprendizaje tanto supervisadas como de refuerzo.​ Se basa en el modelo GPT-4 de OpenAI, una versión mejorada de GPT-3. ChatGPT se lanzó el 30 de noviembre de 20222​ y ha llamado la atención por sus respuestas detalladas y articuladas, aunque se ha criticado su precisión fáctica. El servicio se lanzó inicialmente como gratuito para el público, con planes de monetizarlo más adelante. El 4 de diciembre, OpenAI calculaba que ChatGPT ya tenía más de un millón de usuarios.​ El 14 de marzo de 2023 se lanzó GPT-4. El acceso al servicio está limitado en países como China, Rusia, Irán, y partes de África. El acceso a ChatGPT ha sido bloqueado en Italia debido a que desde las autoridades relacionadas con la protección de datos se estableció que hubo una violación de datos y la base jurídica para utilizar datos personales. A finales de marzo del 2023, ChatGPT integró el uso de plugins,  entre los que se incluye uno que le da la posibilidad de que este navegue por internet. Algunas compañías como Kayak o Expedia lanzaron su propio plugin.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/demo/summarize",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"demo",
+						"summarize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"context\": \"ChatGPT es un prototipo de chatbot de inteligencia artificial desarrollado en 2022 por OpenAI que se especializa en el diálogo. El chatbot es un gran modelo de lenguaje, ajustado con técnicas de aprendizaje tanto supervisadas como de refuerzo.​ Se basa en el modelo GPT-4 de OpenAI, una versión mejorada de GPT-3. ChatGPT se lanzó el 30 de noviembre de 20222​ y ha llamado la atención por sus respuestas detalladas y articuladas, aunque se ha criticado su precisión fáctica. El servicio se lanzó inicialmente como gratuito para el público, con planes de monetizarlo más adelante. El 4 de diciembre, OpenAI calculaba que ChatGPT ya tenía más de un millón de usuarios.​ El 14 de marzo de 2023 se lanzó GPT-4. El acceso al servicio está limitado en países como China, Rusia, Irán, y partes de África. El acceso a ChatGPT ha sido bloqueado en Italia debido a que desde las autoridades relacionadas con la protección de datos se estableció que hubo una violación de datos y la base jurídica para utilizar datos personales. A finales de marzo del 2023, ChatGPT integró el uso de plugins,  entre los que se incluye uno que le da la posibilidad de que este navegue por internet. Algunas compañías como Kayak o Expedia lanzaron su propio plugin.\",\r\n  \"question\": \"¿Cuándo apareció ChatGPT?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/demo/ask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"demo",
+						"ask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
